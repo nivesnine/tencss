@@ -1,0 +1,865 @@
+
+body{
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:focus,
+a:visited,
+a:active,
+a:-webkit-any-link{
+	color: #36f;
+}
+
+a:hover{
+	color: #333;
+}
+
+pre {
+	background-color: #f1f1f1;
+    border-radius: 5px;
+    line-height: 20px;
+	padding: 15px;
+	overflow: auto;
+}
+
+.container{
+	margin: auto;
+	max-width: 1200px;
+}
+
+hr,
+hr.container{
+	margin: 45px auto;
+}
+
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit']{
+	background-color: #fafafa;
+    border: 1px solid #333;
+	border-radius: 5px;
+	color: #333;
+    cursor: pointer;
+    display: block;
+    margin: 15px 0;
+    padding: 5px 10px;
+    width: auto;
+}
+
+.button-group button {
+    border: 1px solid #333;
+    border-left: none;
+    border-radius: 0;
+    color: #666;
+    cursor: pointer;
+    display: inline;
+    margin-right: -4px;
+    padding: 5px 15px;
+}
+
+.button-group button:first-child {
+  border-left: 1px solid #333;
+  border-radius: 5px 0 0 5px;
+}
+
+.button-group button:last-child{
+	border-radius: 0 5px 5px 0;
+}
+
+button:hover,
+input[type='button']:hover,
+input[type='reset']:hover,
+input[type='submit']:hover{
+	background-color: #333;
+    color: #fafafa;
+}
+
+input[type='checkbox']{
+	height: 15px;
+		width: 15px;
+}
+
+.tag{
+    background: #ddd;
+    border-radius: 5px;
+    font-size: 10px;
+	margin: 5px;
+	padding: 1px 5px;
+}
+
+.card{
+    border: 1px solid;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px 0 #666;
+    display: inline-block;
+    margin-bottom: 30px;
+	padding: 0;
+    width: fit-content;
+    box-sizing: border-box;
+}
+
+.card > div:first-of-type,
+.card > div:first-of-type > *{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.card > div:last-of_type,
+.card > div:last-of_type > .div-header,
+.card > div:last-of_type > .div-image,
+.card > div:last-of_type > .div-content,
+.card > div:last-of_type > .div-footer{
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+[class*="col-"] > .card,
+[class*="sm-col-"] > .card,
+[class*="md-col-"] > .card,
+[class*="lg-col-"] > .card{
+	width: 100%;
+}
+
+.card-header{
+	border-bottom: 1px solid #333;
+    border-radius: 5px 5px 0 0;
+	padding: 15px;
+}
+
+.card-header > *{
+	margin: 0;
+}
+
+.card-image > img{
+	width: 100%;
+}
+
+.card-content{
+	padding: 15px;
+}
+
+.card-footer{
+	border-top: 1px solid #333;
+	padding: 15px;
+}
+
+
+.card-footer-buttons.one-button button{
+    width: 100%;
+}
+
+.card-footer-buttons.two-buttons button{
+    width: 50%;
+}
+
+.card-footer-buttons.three-buttons button{
+    width: 33.33333%;
+}
+
+.card-footer-buttons button{
+	border-bottom: none;
+    border-radius: 0;
+    border-right: none;
+    display: inline-block;
+    height: 40px;
+    margin: 0 -4px 0 0;
+}
+
+.card-footer-buttons button:first-of-type{
+    border-bottom-left-radius: 5px;
+	border-left: none;
+}
+
+.card-footer-buttons button:last-of-type{
+     border-bottom-right-radius: 5px;
+}
+
+.form{
+    border: 1px solid;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px 0 #666;
+	padding: 15px;
+}
+
+form{
+	padding: 15px 0;
+}
+
+fieldset{
+    border-radius: 5px;
+	margin-bottom: 15px;
+    padding: 15px 5px;
+}
+
+label{
+	display: block;
+	margin: 5px 0;
+}
+
+label.checkbox{
+	display: inline-block;
+    margin: 20px 0;
+}
+
+code{
+	background-color: #ddd;
+	color: #d36;
+}
+
+input{
+	margin-bottom: 5px;
+}
+
+input[type='text'],
+input[type='date'], 
+input[type='datetime-local'], 
+input[type='email'], 
+input[type='month'], 
+input[type='number'], 
+input[type='password'], 
+input[type='tel'], 
+input[type='time'],
+input[type='url'],
+input[type='week'],
+select {
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: block;
+    height: 35px;
+    padding: 5px;
+}
+
+input[type='file']{
+	display: none;
+}
+
+label.file{
+    background: #ddd;
+	border: 1px solid #333;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: block;
+    height: 35px;
+    padding: 5px;
+    text-align: center;
+}
+
+table {
+  border-spacing: 0;
+  width: 100%;
+}
+
+table.bordered th,
+table.bordered td{
+	border-top: 1px solid #333;
+	border-left: 1px solid #333;
+}
+
+table th:first-of-type{
+	border-radius: 5px 0 0 0;
+}
+
+table th:last-of-type{
+	border-radius: 0 5px 0 0;
+}
+
+table tr:last-of-type td:first-of-type{
+	border-radius: 0 0 0 5px;
+}
+
+table.bordered td:last-of-type{
+	border-right: 1px solid #333;
+}
+
+table.bordered tr:last-of-type td{
+	border-bottom: 1px solid #333;
+}
+
+table tr:last-of-type td:last-of-type{
+	border-radius: 0 0 5px 0;
+}
+
+table td, table th {
+  padding: 10px;
+}
+
+table tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+
+table tr:hover {
+	background-color: #ddd;
+}
+
+table th {
+  background-color: #333;
+  color: #fafafa;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: left;
+}
+
+.notification{
+	background-color: #ddd;
+	border: 1px solid #333;
+	border-radius: 5px;
+	clear: both;
+	margin: 15px;
+	padding: 15px;
+	position: initial;
+	transition: visibility 0s, position 0.5s;
+	visibility: visible;
+}
+
+.close{
+    position: relative;
+    right: 30px;
+    text-align: right;
+    top: 40px;
+}
+
+#close{
+	display: none;
+}
+
+#close:checked + label{
+	display: none;
+}
+
+#close:checked ~ .notification{
+	position: absolute;
+	visibility: hidden;
+}
+
+.menu-icon{
+	background-color: #fafafa;
+    border: 1px solid #333;
+    border-radius: 0 5px 5px 0;
+	font-size: 30px;
+    left: 0;
+    margin: 15px 15px 15px 0;
+    padding: 5px;
+    position: fixed;
+    transition: left 0.7s;
+    width: 35px;
+}
+
+.menu-icon:hover{
+	left: 30%;
+}
+
+.menu-icon:hover + .navigation{
+	left: 0;
+}
+
+.navigation{
+	background-color: #333;
+    height: 100%;
+	left: -30%;
+	position: fixed;
+	transition: left 0.7s;
+    width: 30%;
+}
+
+.navigation ul{
+	list-style: none;
+	padding: 0;
+}
+
+.navigation ul li{
+	margin: 0;
+}
+
+.navigation > ul > li{
+    box-sizing: border-box;
+    display: block;
+	width: 100%;
+}
+
+.navigation ul li a{
+	color: #fafafa;
+	display: block;
+	padding: 15px;
+}
+
+.row{
+    display:flex;
+    flex-wrap:wrap;
+    margin-bottom: 15px;
+}
+
+.col-10{
+	flex:0 0 auto;
+	width: calc(100% - 30px )
+}
+
+.col-9{
+	flex:0 0 auto;
+	width: calc(90%  - 30px)
+}
+
+.col-8{
+	flex:0 0 auto;
+	width: calc(80%  - 30px)
+}
+
+.col-7{
+	flex:0 0 auto;
+	width: calc(70%  - 30px)
+}
+
+.col-6{
+	flex:0 0 auto;
+	width: calc(60%  - 30px)
+}
+
+.col-5{
+	flex:0 0 auto;
+	width: calc(50%  - 30px)
+}
+
+.col-4{
+	flex:0 0 auto;
+	width: calc(40%  - 30px)
+}
+
+.col-3{
+	flex:0 0 auto;
+	width: calc(30%  - 30px)
+}
+
+.col-2{
+	flex:0 0 auto;
+	width: calc(20%  - 30px)
+}
+
+.col-1{
+	flex:0 0 auto;
+	width: calc(10%  - 30px)
+}
+
+[class*="col-"]{
+	display: inline-block;
+	padding: 0 15px;
+}
+
+.col-0{
+	display: none;
+}
+
+.breadcrumbs{
+	list-style: none;
+	margin: 15px 0;
+    padding: 0;
+}
+
+.breadcrumbs li{
+	display: inline-block;
+}
+
+.breadcrumbs li:after{
+	content:  ' / ';
+}
+
+.breadcrumbs li:last-of-type:after{
+	content: none;
+}
+
+form [class*="col-"] input[type='text'],
+form [class*="col-"] input[type='date'], 
+form [class*="col-"] input[type='datetime-local'], 
+form [class*="col-"] input[type='email'], 
+form [class*="col-"] input[type='month'], 
+form [class*="col-"] input[type='number'], 
+form [class*="col-"] input[type='password'], 
+form [class*="col-"] input[type='tel'], 
+form [class*="col-"] input[type='time'],
+form [class*="col-"] input[type='url'],
+form [class*="col-"] input[type='week'],
+form [class*="col-"] select{
+	width: 100%;
+}
+
+
+.menu {
+	border: 1px solid #666;
+	border-radius: 5px;
+	margin: 15px 0;
+}
+
+.menu > * {
+	border-bottom: 1px solid #666;
+    cursor: pointer;
+    display: block;
+	margin: 0;
+	padding: 15px;
+}
+
+.menu > *:first-child{
+	border-radius: 5px 5px 0 0;
+}
+
+.menu > *:last-child{
+	border-bottom: none;
+	border-radius: 0 0 5px 5px;
+}
+
+.menu > *:hover {
+	background-color: #f2f2f2;
+}
+
+.centered{
+	text-align: center;
+}
+
+.left{
+	text-align: left;
+}
+
+.right{
+	text-align: right;
+}
+
+.float-left{
+	float: left;
+}
+
+.float-right{
+	float: right;
+}
+
+.clear-both{
+	clear: both;
+}
+
+.fixed{
+	position: fixed;
+}
+
+.hide{
+	display: none;
+}
+
+.xs{
+	font-size: 0.5rem;
+}
+
+.sm{
+	font-size: 0.75rem;
+}
+
+.md{
+	font-size: 1rem;
+}
+
+.lg{
+	font-size: 2rem;
+}
+
+.xl{
+	font-size: 3rem;
+}
+
+@media screen and (min-width: 769px){
+	.sm-col-10{
+		flex:0 0 auto;
+		width: calc(100% - 30px );
+	}
+
+	.sm-col-9{
+		flex:0 0 auto;
+		width: calc(90%  - 30px);
+	}
+
+	.sm-col-8{
+		flex:0 0 auto;
+		width: calc(80%  - 30px);
+	}
+
+	.sm-col-7{
+		flex:0 0 auto;
+		width: calc(70%  - 30px);
+	}
+
+	.sm-col-6{
+		flex:0 0 auto;
+		width: calc(60%  - 30px);
+	}
+
+	.sm-col-5{
+		flex:0 0 auto;
+		width: calc(50%  - 30px);
+	}
+
+	.sm-col-4{
+		flex:0 0 auto;
+		width: calc(40%  - 30px);
+	}
+
+	.sm-col-3{
+		flex:0 0 auto;
+		width: calc(30%  - 30px);
+	}
+
+	.sm-col-2{
+		flex:0 0 auto;
+		width: calc(20%  - 30px);
+	}
+
+	.sm-col-1{
+		flex:0 0 auto;
+		width: calc(10%  - 30px);
+	}
+
+	[class*="sm-col-"]{
+		display: inline-block;
+	}
+
+	.sm-col-0{
+		display: none;
+	}
+}
+
+@media screen and (min-width: 993px){
+
+	.navigation { 
+		display: block;
+		height: 45px;
+		left: 0;
+		position: initial;
+		width: 100%;
+	}
+
+	.navigation.fixed{
+		position: fixed;
+	}
+
+	.menu-icon{
+		display: none;
+	}
+
+	.navigation > ul
+	{
+	    padding: 0;
+	}
+
+	.navigation > ul > li
+	{
+	    display: inline-block;
+	    padding: 5px 15px 10px 0;
+	    position: relative;
+	    width: auto;
+	}
+	.navigation > ul > li:hover{ 
+		background: #ddd; 
+	}
+
+	.navigation > ul > li:hover a{
+		color:  #333;
+	}
+
+	.navigation > ul li:hover > ul
+	{
+	    display: inline;
+	}
+
+	.navigation > ul > li a /* Apply to all links inside the multi-level menu */
+	{
+	    color: #fafafa;
+	    display: block;
+	    line-height: 30px;
+	    padding: 0 0 0 10px;
+	    text-decoration: none;
+	}
+
+	.navigation > ul > li a:hover {
+		color: #333;
+	}
+
+	.drilldown
+	{
+	    background: #fafafa;
+	    box-shadow: 5px 10px 15px 0 #333;
+	    display: none;
+	    list-style: none;
+	    margin: 0;
+	    padding: 0;
+	    position: absolute;
+	    right: -150px;
+	    top: 0;
+	    width: 150px;
+	}
+
+	.drilldown > li
+	{
+	    height: 30px;
+	}
+	.drilldown > li:hover {
+		background: #ddd;
+	}
+
+	.dropdown
+	{
+	    background: #fafafa;
+	    box-shadow: 5px 10px 15px 0 #333;
+	    display: none;
+	    list-style: none;
+	    margin: 0;
+	    padding: 0;
+	    position: absolute;
+	    top: 45px;
+	    width: 150px;
+	}
+
+	.dropdown > li
+	{
+	    height: 30px;
+	    position: relative;
+	}
+
+	.dropdown li{ 
+		padding: 5px;
+	}
+
+	.dropdown > li:hover { 
+		background: #ddd; 
+	}
+
+	.dropdown > li > a {
+		color:  #333;
+	}
+
+	.navigation.fixed{
+		margin-top: -45px;
+	    position: fixed;
+		width: 100%;
+	}
+
+	.navigation.fixed + *{
+		margin-top: 45px;
+	}
+
+	.md-col-10{
+		flex:0 0 auto;
+		width: calc(100% - 30px );
+	}
+
+	.md-col-9{
+		flex:0 0 auto;
+		width: calc(90%  - 30px);
+	}
+
+	.md-col-8{
+		flex:0 0 auto;
+		width: calc(80%  - 30px);
+	}
+
+	.md-col-7{
+		flex:0 0 auto;
+		width: calc(70%  - 30px);
+	}
+
+	.md-col-6{
+		flex:0 0 auto;
+		width: calc(60%  - 30px);
+	}
+
+	.md-col-5{
+		flex:0 0 auto;
+		width: calc(50%  - 30px);
+	}
+
+	.md-col-4{
+		flex:0 0 auto;
+		width: calc(40%  - 30px);
+	}
+
+	.md-col-3{
+		flex:0 0 auto;
+		width: calc(30%  - 30px);
+	}
+
+	.md-col-2{
+		flex:0 0 auto;
+		width: calc(20%  - 30px);
+	}
+
+	.md-col-1{
+		flex:0 0 auto;
+		width: calc(10%  - 30px);
+	}
+
+	[class*="md-col-"]{
+		display: inline-block;
+	}
+
+	.md-col-0{
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1200px){
+	.lg-col-10{
+		flex:0 0 auto;
+		width: calc(100% - 30px );
+	}
+
+	.lg-col-9{
+		flex:0 0 auto;
+		width: calc(90%  - 30px);
+	}
+
+	.lg-col-8{
+		flex:0 0 auto;
+		width: calc(80%  - 30px);
+	}
+
+	.lg-col-7{
+		flex:0 0 auto;
+		width: calc(70%  - 30px);
+	}
+
+	.lg-col-6{
+		flex:0 0 auto;
+		width: calc(60%  - 30px);
+	}
+
+	.lg-col-5{
+		flex:0 0 auto;
+		width: calc(50%  - 30px);
+	}
+
+	.lg-col-4{
+		flex:0 0 auto;
+		width: calc(40%  - 30px);
+	}
+
+	.lg-col-3{
+		flex:0 0 auto;
+		width: calc(30%  - 30px);
+	}
+
+	.lg-col-2{
+		flex:0 0 auto;
+		width: calc(20%  - 30px);
+	}
+
+	.lg-col-1{
+		flex:0 0 auto;
+		width: calc(10%  - 30px);
+	}
+
+	[class*="lg-col-"]{
+		display: inline-block;
+	}
+
+	.lg-col-0{
+		display: none;
+	}
+}

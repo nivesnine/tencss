@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title></title>
+
+<link rel="stylesheet" href="ten.css">
+
+</head>
+<body>
+
+<div class="menu-icon">&#x2630;</div>
+<nav class="navigation">
+    <ul class="container">
+        <li><a href="#navigation">Navigation</a></li>
+        <li><a href="#grid">Grid</a></li>
+        <li>
+            <a href="#">More Stuff</a>
+            <ul class="dropdown">
+                <li><a href="#menus">Menus</a></li>
+                <li><a href="#notifications">Notifications</a></li>
+                <li>
+                    <a href="#">Even More Stuff</a>
+                    <ul class="drilldown">
+                        <li><a href="#breadcrumbs">Breadcrumbs</a></li>
+                        <li><a href="#forms">Forms</a></li>
+                        <li><a href="#sizes">Sizes</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <li><a href="#cards">Cards</a></li>
+        </li>
+        <li><a href="#tables">Tables</a></li>
+    </ul>
+</nav>
+
+
+<div class="row container">
+    <div class="col-0 md-col-4 lg-col-2">
+        <div class="menu fixed">
+            <a href="#navigation">Navigation</a>
+            <a href="#grid">Grid</a>
+            <a href="#menus">Menus</a>
+            <a href="#notifications">Notifications</a>
+            <a href="#breadcrumbs">Breadcrumbs</a>
+            <a href="#forms">Forms</a>
+            <a href="#cards">Cards</a>
+            <a href="#tables">Tables</a>
+            <a href="#sizes">Sizes</a>
+        </div>
+    </div>
+
+    <div class="col-10 md-col-6 lg-col-8">
+
+        <div class="row">
+            <div class="col-10 centered">
+                <h1>This is TenCSS</h1>
+                <p>TenCSS uses flexbox. It has 10 columns to keep the math simple.</p>
+                <p>It's mostly boilerplate, but it does include enough to build something nice, just add some color.</p>
+            </div>
+        </div>
+
+        <hr id="navigation">
+
+        <div class="row">
+            <div class="col-10 lg-col-3">
+                <h3>Navigation</h3>
+                <p>You can make the navigation "fixed" by including the <code>.fixed</code> class.</p>
+                <p>Use <code>.container</code> to keep things contained.</p>
+                <p>Use <code>.dropdown</code> is used for the first level of submenus, and <code>.drilldown</code> for the second.</p>
+                <p>This menu works on mobile as well!</p>
+            </div>
+            <div class="col-10 lg-col-7">
+                <pre>
+&lt;div class="menu-icon"&gt;&#x2630;&lt;/div&gt;
+&lt;nav class="navigation fixed"&gt;
+  &lt;ul class="container"&gt;
+    &lt;li&gt;&lt;a href="#forms"&gt;Forms&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#cards"&gt;Cards&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="#"&gt;More Stuff&lt;/a&gt;
+      &lt;ul class="dropdown"&gt;
+        &lt;li&gt;&lt;a href="#navigation"&gt;Navigation&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#notifications"&gt;Notifications&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;
+          &lt;a href="#"&gt;Even More Stuff&lt;/a&gt;
+          &lt;ul class="drilldown"&gt;
+            &lt;li&gt;&lt;a href="#breadcrumbs"&gt;Breadcrumbs&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#sizes"&gt;Sizes&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+                </pre>
+            </div>
+        </div>
+
+        <hr id="grid">
+
+        <div class="row">
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-10 sm-col-0">
+                        <div style="background: indigo; width: 100%;">&nbsp;</div>
+                    </div>
+                    <div class="col-0 sm-col-6 md-col-4 lg-col-2">
+                        <div style="background: crimson; width: 100%;">&nbsp;</div>
+                    </div>
+                    <div class="col-10 sm-col-1 md-col-6 lg-col-2">
+                        <div style="background: red; width: 100%;">&nbsp;</div>
+                    </div>
+                    <div class="col-10 sm-col-1 md-col-2 lg-col-2">
+                        <div style="background: blue; width: 100%;">&nbsp;</div>
+                    </div>
+                    <div class="col-10 sm-col-1 md-col-8 lg-col-2">
+                        <div style="background: yellow; width: 100%;">&nbsp;</div>
+                    </div>
+                    <div class="col-10 sm-col-1 md-col-10 lg-col-2">
+                        <div style="background: green; width: 100%;">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2 sm-col-4 md-col-3 lg-col-5">
+                        <div style="background: black; width: 100%;">&nbsp;</div>
+                    </div>
+                    <div class="col-2 sm-col-4 md-col-7 lg-col-5">
+                        <div style="background: red; width: 100%;">&nbsp;</div>
+                    </div>
+                    <div class="col-2 sm-col-2 md-col-3 lg-col-10">
+                        <div style="background: blue; width: 100%;">&nbsp;</div>
+                    </div>
+                    <div class="col-2 sm-col-9 md-col-3 lg-col-10">
+                        <div style="background: yellow; width: 100%;">&nbsp;</div>
+                    </div>
+                    <div class="col-2 sm-col-1 md-col-4 lg-col-10">
+                        <div style="background: green; width: 100%;">&nbsp;</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-10 lg-col-4">
+                <h3>Grid</h3>
+                <p>The grid system has 4 screen size targets <code>col-*</code>, <code>sm-col-*</code>, <code>md-col-*</code>, and <code>lg-col-*</code> all of which span 0 to 10 columns.</p>
+                <p>For example, if you want to show content only for mobile, you could use <code>.col-10 sm-col-0</code>. Check out how the first column in the example code switches.</p>
+            </div>
+
+            <div class="col-10 lg-col-6">
+                <pre>
+&lt;div class="row"&gt;
+    &lt;div class="col-10 sm-col-0"&gt;
+        Column Content
+    &lt;/div&gt;
+    &lt;div class="col-0 sm-col-6 md-col-4 lg-col-2"&gt;
+        Column Content
+    &lt;/div&gt;
+    &lt;div class="col-10 sm-col-1 md-col-2 lg-col-2"&gt;
+        Column Content
+    &lt;/div&gt;
+    &lt;div class="col-10 sm-col-1 md-col-8 lg-col-2"&gt;
+        Column Content
+    &lt;/div&gt;
+    &lt;div class="col-10 sm-col-1 md-col-10 lg-col-2"&gt;
+        Column Content
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+    &lt;div class="col-2 sm-col-4 md-col-3 lg-col-5"&gt;
+        Column Content
+    &lt;/div&gt;
+    &lt;div class="col-2 sm-col-4 md-col-7 lg-col-5"&gt;
+        Column Content
+    &lt;/div&gt;
+    &lt;div class="col-2 sm-col-2 md-col-3 lg-col-10"&gt;
+        Column Content
+    &lt;/div&gt;
+    &lt;div class="col-2 sm-col-9 md-col-3 lg-col-10"&gt;
+        Column Content
+    &lt;/div&gt;
+    &lt;div class="col-2 sm-col-1 md-col-4 lg-col-10"&gt;
+        Column Content
+    &lt;/div&gt;
+&lt;/div&gt;
+                </pre>
+            </div>
+        </div>
+
+
+        <hr id="menus">
+
+        <div class="row">
+
+            <div class="col-10 lg-col-2">
+                <div class="menu">
+                    <a href="#navigation">Navigation</a>
+                    <a href="#notifications">Notifications</a>
+                    <a href="#breadcrumbs">Breadcrumbs</a>
+                    <a href="#forms">Forms</a>
+                    <a href="#cards">Cards</a>
+                    <a href="#sizes">Sizes</a>
+                </div>
+            </div>
+
+            <div class="col-10 lg-col-3">
+                <h3>Menus</h3>
+                <p>Menus can also be <code>.fixed</code></p>
+            </div>
+
+            <div class="col-10 lg-col-5">
+                <pre>
+&lt;div class="menu"&gt;
+  &lt;a href="#navigation"&gt;Navigation&lt;/a&gt;
+  &lt;a href="#notifications"&gt;Notifications&lt;/a&gt;
+  &lt;a href="#breadcrumbs"&gt;Breadcrumbs&lt;/a&gt;
+  &lt;a href="#forms"&gt;Forms&lt;/a&gt;
+  &lt;a href="#cards"&gt;Cards&lt;/a&gt;
+  &lt;a href="#sizes"&gt;Sizes&lt;/a&gt;
+&lt;/div&gt;
+                </pre>
+            </div>
+
+        </div>
+
+        <hr id="notifications">
+
+        <div class="row">
+
+            <div class="col-10">
+
+                <input type="checkbox" id="close" class="hide">
+                <label class='close' for="close">&#x2715;</label>
+                <div class="notification">
+                  <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor. Pellentesque risus mi, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="col-10 lg-col-3">
+
+                <h3>Notifications</h3>
+                <p>Here we use the checkbox trick to show closable messages using just CSS.</p>
+
+            </div>
+
+            <div class="col-10 lg-col-7">
+
+                <pre>
+&lt;input type="checkbox" id="close" class="hide"&gt;
+&lt;label class='close' for="close"&gt;&#x2715;&lt;/label&gt;
+&lt;div class="notification"&gt;
+  &lt;p&gt;
+    message text goes here
+  &lt;/p&gt;
+&lt;/div&gt;
+                </pre>
+            </div>
+
+        </div>
+
+        <hr id="breadcrumbs">
+
+        <div class="row">
+            <div class="col-10">
+                <ul class="breadcrumbs">
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><span>Product</span></li>
+                </ul>
+            </div>
+
+
+            <div class="col-10 lg-col-5">
+                <h3>Breadcrumbs</h3>
+            </div>
+
+            <div class="col-10 lg-col-5">
+                <pre>
+&lt;ul class="breadcrumbs"&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Shop&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Category&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;span&gt;Product&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+                </pre>
+
+            </div>
+        </div>
+
+        <hr id="forms">
+
+        <div class="row">
+            <div class="col-10">
+                <form class="form row">
+                    <div class="col-10">
+                        <fieldset>
+                            <label>Text</label>
+                            <input type="text" name="text">
+                            <label>Number</label>
+                            <input type="number" name="text">
+                        </fieldset>
+                    </div>
+                    <div class="col-5">
+                        <label>Select</label>
+                        <select>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
+                        </select>
+                    </div>
+                    <div class="col-5">
+                        <label>File</label>
+                        <label class='file' for="file">Upload File</label>
+                        <input id='file' type="file">
+                    </div>
+                    <div class="col-10">
+                        <label class="checkbox">Checkbox</label>
+                        <input type="checkbox"> 
+                    </div>
+                    <div class="col-4">
+                        <label>Datetime-Local</label>
+                        <input type="datetime-local">
+                    </div>
+                    <div class="col-6">
+                        <label>Tel</label>
+                        <input type="tel">
+                    </div>
+                    <div class="col-7">
+                        <label>Email</label>
+                        <input type="email">
+                    </div>
+                    <div class="col-3">
+                        <label>Password</label>
+                        <input type="password">
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-10 lg-col-5">
+                <h3>Forms</h3>
+                <p>Forms can have columns! Just remember to include the <code>.row</code> class in your form tag!</p>
+                <p>The <code>.form</code> class adds a border and box-shadow, you don't like it, don't use it!</p>
+                <p>The <code>.file</code> class and <code>.checkbox</code> class can help you display these input types in a slightly nicer way.</p>
+            </div>
+
+            <div class="col-10 lg-col-5">
+                <pre>
+&lt;form class="form row"&gt;
+  &lt;div class="col-10"&gt;
+    &lt;fieldset&gt;
+      &lt;label&gt;Text&lt;/label&gt;
+      &lt;input type="text" name="text"&gt;
+      &lt;label&gt;Number&lt;/label&gt;
+      &lt;input type="number" name="text"&gt;
+    &lt;/fieldset&gt;
+  &lt;/div&gt;
+  &lt;div class="col-5"&gt;
+    &lt;label&gt;Select&lt;/label&gt;
+    &lt;select&gt;
+      &lt;option&gt;Option 1&lt;/option&gt;
+      &lt;option&gt;Option 2&lt;/option&gt;
+      &lt;option&gt;Option 3&lt;/option&gt;
+      &lt;option&gt;Option 4&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+  &lt;div class="col-5"&gt;
+    &lt;label&gt;File&lt;/label&gt;
+    &lt;label class='file' for="file"&gt;Upload File&lt;/label&gt;
+    &lt;input id='file' type="file"&gt;
+  &lt;/div&gt;
+  &lt;div class="col-10"&gt;
+    &lt;label class="checkbox"&gt;Checkbox&lt;/label&gt;
+    &lt;input type="checkbox"&gt; 
+  &lt;/div&gt;
+  &lt;div class="col-4"&gt;
+    &lt;label&gt;Datetime-Local&lt;/label&gt;
+    &lt;input type="datetime-local"&gt;
+  &lt;/div&gt;
+  &lt;div class="col-6"&gt;
+    &lt;label&gt;Tel&lt;/label&gt;
+    &lt;input type="tel"&gt;
+  &lt;/div&gt;
+  &lt;div class="col-7"&gt;
+    &lt;label&gt;Email&lt;/label&gt;
+    &lt;input type="email"&gt;
+  &lt;/div&gt;
+  &lt;div class="col-3"&gt;
+    &lt;label&gt;Password&lt;/label&gt;
+    &lt;input type="password"&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+                </pre>
+            </div>
+        </div>
+
+        <hr id="cards">
+
+        <div class="row">
+            <div class="col-10 md-col-5">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/300">
+                    </div>
+                    <div class="card-content">
+                        <p>This is just some text about an image</p>
+                    </div>
+                    <div class="card-footer">
+                        <p>This is just some footer text</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-10 md-col-5">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>This is a card header</h4>
+                    </div>
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/300">
+                    </div>
+                    <div class="card-content">
+                        <p>Here's some content for this card!</p>
+                    </div>
+                    <div class="card-footer-buttons two-buttons">
+                        <button>Go Here</button>
+                        <button>Go There</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-10 lg-col-4">
+                <h3>Cards</h3>
+                <p>The <code>.cards</code> class can be used on pretty much any element to give it a box-shadow.</p>
+                <p>Cards have a few subclasses. There's a <code>.card-image</code> if you need an image. <code>.card-header</code> goes at the top, <code>.card-content</code> goes in the middle, and <code>.card-footer</code> goes at the buttom. If you need buttons instead of a footer use <code>.card-footer-buttons</code> and specify <code>.one-button</code>, <code>.two-buttons</code>, or <code>.three-buttons</code>.</p>
+            </div>
+
+            <div class="col-10 lg-col-6">
+                <pre>
+&lt;div class="col-10 md-col-5"&gt;
+  &lt;div class="card"&gt;
+    &lt;div class="card-image"&gt;
+      &lt;img src="https://via.placeholder.com/600"&gt;
+    &lt;/div&gt;
+    &lt;div class="card-content"&gt;
+      &lt;p&gt;This is just some text about an image&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="card-footer"&gt;
+      &lt;p&gt;This is just some footer text&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="col-10 md-col-5"&gt;
+  &lt;div class="card"&gt;
+    &lt;div class="card-header"&gt;
+      &lt;h4&gt;This is a card header&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div class="card-image"&gt;
+      &lt;img src="https://via.placeholder.com/600"&gt;
+    &lt;/div&gt;
+    &lt;div class="card-content"&gt;
+      &lt;p&gt;Here's some content for this card!&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="card-footer-buttons two-buttons"&gt;
+      &lt;button&gt;Go Here&lt;/button&gt;
+      &lt;button&gt;Go There&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                </pre>
+            </div>
+        </div>
+
+        <hr id="tables">
+
+
+        <div class="row">
+            <div class="col-10">
+                <h3>Tables</h3>
+                <p>Tables don't require classes! However, <code>.bordered</code> is available if you want bordered tables, just add the class to the table tag!</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-10">
+                <table class="bordered">
+                    <thead>
+                        <tr>
+                            <th>Table Header</th>
+                            <th>Table Header</th>
+                            <th>Table Header</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                        </tr>
+                        <tr>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                        </tr>
+                        <tr>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-10">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Table Header</th>
+                            <th>Table Header</th>
+                            <th>Table Header</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                        </tr>
+                        <tr>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                        </tr>
+                        <tr>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <hr id="sizes">
+
+        <div class="row">
+           <div class="col-10">
+                <h3>Sizes</h3>
+                <p class="xs">Extra Small <code>.xs</code></p>
+                <p class="sm">Small <code>.sm</code></p>
+                <p>Normal</p>
+                <p class="md">Medium <code>.md</code></p>
+                <p class="lg">Large <code>.lg</code></p>
+                <p class="xl">Extra Large <code>.xl</code></p>
+            </div>
+        </div>
+              
+    </div>
+</div>
+
+</body>
+</html>
