@@ -394,6 +394,10 @@ table th {
     margin-bottom: 15px;
 }
 
+.row-centered{
+	justify-content: center;
+}
+
 .col-10{
 	flex:0 0 auto;
 	width: calc(100% - 30px )
